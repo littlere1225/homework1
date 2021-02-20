@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>Bootstrap Navigation Bar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<!--navigation  bar-->
+<nav class="nav navbar-default navbar-fixed-top"><!--navigation bar colore & fixed top-->
+    <div class="container-fluid">
+            <div class="navbar-header"><!--接下來放的是導覽列的標頭-->
+<!--RWD 三-->  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+ <!--logo-->             
+                <img alt="Brand" src="starbucks.png" width="50"><!--a class="navbar-brand" href="#">Brand</a>-->
+            </div>
+            
+<!--RWD 三-->
+      <div class="collapse navbar-collapse" id="myNavbar"><!--底下放要縮放的內容-->
+<!--tabs-->
+        <ul class="nav navbar-nav"><!--nav nav-tabs-->
+          <li><a data-toggle="tab" href="#home">Home</a></li>
+          <li><a data-toggle="tab" href="#menu1">Page 1</a></li>
+          <li><a data-toggle="tab" href="#menu2">Page 2</a></li>
+<!--dropdown tabs-->
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="#">First</a></li>
+                  <li><a href="#">Second</a></li>
+                  <li><a href="#">Third</a></li>
+              </ul>
+          </li>
+        </ul> 
+<!--log in-->
+        <ul class="nav navbar-nav navbar-right">
+                    <li><a data-toggle="tab" href="#"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li>
+                    <li><a data-toggle="tab" href="#">Log out</a></li>
+                    <li><a data-toggle="tab" href="#"><span class="glyphicon glyphicon-user"></span> Admin</a></li>
+        </ul>
+      </div>
+    </div>
+</nav>    
+
+<!--Dynamic Tabs content--> 
+<div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+            <h3>HOME</h3>
+            <p>Some content.</p>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+            <h3>Menu 1</h3>
+            <p>Some content in menu 1.</p>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+            <h3>Menu 2</h3>
+            <p>Some content in menu 2.</p>
+        </div>
+    </div>
+
+                
+
+</body>
+</html>
+
