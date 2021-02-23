@@ -298,6 +298,7 @@ div#about {
 .detail-block {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 7px 0px;
+<<<<<<< HEAD
 }
 
 .label {
@@ -308,6 +309,8 @@ div#about {
     color: #fff;
     background-color: #ea6512 !important;
     border-color: #ea6512 !important;
+=======
+>>>>>>> c47bf55d7e40a6d471c2b3f3c4ac06f6d031734b
 }
 
 .footer {
